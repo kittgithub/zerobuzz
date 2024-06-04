@@ -497,6 +497,73 @@ header {
  z-index: 3;
 }
 
+/* =================================== ! sektion med produkter ! ======================================= */
+
+
+.beer-catalog {
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.beer-list {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px 20px;
+}
+.beer-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.beer-item {
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.beer-image {
+  padding: 0 20px;
+}
+.beer-image img {
+  box-shadow: var(--item-shadow);
+}
+.beer-info-wrapper {
+  position: relative;
+  background-color: var(--secondary-1-color);
+  box-shadow: var(--item-shadow);
+  padding: 60px 30px 30px 30px;
+  margin-top: -20px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  z-index: -1;
+}
+.beer-info-wrapper .btn {
+  font-size: 1rem;
+}
+.beer-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.beer-info span:first-child {
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+ 
+}
+.beer-info span:last-child {
+
+  text-align: center;
+}
+
 
 /* =================================== !sektion med footer ! ======================================= */
 
