@@ -137,6 +137,7 @@ main {
  float: left;
  width: 33.33%;
  padding: 16px;
+
 }
 
 
@@ -144,6 +145,31 @@ main {
  float: left;
  width: 50%;
  padding: 16px;
+ 
+}
+
+.image-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(253, 134, 36, 0.18); /* Add your color filter here */
+  z-index: 1;
+}
+
+.image-wrapper img {
+  display: block;
+  width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 0;
 }
 
 
@@ -195,6 +221,7 @@ main {
    width: 100%;
    text-align: center;
 }
+
 #content {
  text-align: center;
 }
